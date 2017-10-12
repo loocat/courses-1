@@ -1,6 +1,7 @@
 from __future__ import division,print_function
 import math, os, json, sys, re
 #import cPickle as pickle
+import pickle
 from glob import glob
 import numpy as np
 from matplotlib import pyplot as plt
@@ -32,7 +33,8 @@ from theano.tensor.signal import pool
 
 import keras
 from keras import backend as K
-from keras.utils.data_utils import get_file
+#from keras.utils.data_utils import get_file
+from keras.utils import get_file
 from keras.utils import np_utils
 from keras.utils.np_utils import to_categorical
 from keras.models import Sequential, Model
